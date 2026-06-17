@@ -7,7 +7,7 @@ interface Loopback0
  ip address <LOOPBACK_IP> 255.255.255.255
 
 ! IS-IS process
-router isis CORE
+router isis CYBER
  net <NET_ID>
  is-type level-2-only
  metric-style wide
