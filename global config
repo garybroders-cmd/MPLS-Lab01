@@ -1,0 +1,15 @@
+! Global
+mpls ip
+ip cef
+
+! Loopback as router ID
+interface Loopback0
+ ip address <LOOPBACK_IP> 255.255.255.255
+
+! IS-IS process
+router isis CORE
+ net <NET_ID>
+ is-type level-2-only
+ metric-style wide
+ mpls traffic-eng level-2
+ mpls traffic-eng router-id Loopback0
