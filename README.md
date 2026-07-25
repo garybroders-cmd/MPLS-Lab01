@@ -1,3 +1,11 @@
+Avoid corruption on the Juniper VMrouter
+
+Run this on first shutdown.
+
+root@vmrouter-1> request system halt 
+
+Then shut down on EVE-NG Topology
+
 Troubleshooting Juniper MPLS and IS-IS.
 
 Check ISIS
